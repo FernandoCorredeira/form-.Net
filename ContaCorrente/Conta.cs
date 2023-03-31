@@ -29,8 +29,8 @@ namespace ContaCorrente
         public void Transferir(double Saldo, Conta destino)
         {
             
-            if (Saldo <= 0) {
-                Saldo += 100;           
+            if (this.Saldo == 0) {
+                Saldo = 0;           
             }
             this.Saldo -= Saldo;
             destino.Saldo += Saldo;
